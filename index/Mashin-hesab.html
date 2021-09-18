@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashin-hesab</title>
+    <link rel="stylesheet" href="Mashin-hesab.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="d-cover"></div>
+    <video  muted loop autoplay class="vide">
+        <source src="gif.mp4">
+    </video>
+    <section class="cont">
+        <div class="header">
+            <div id="pish"></div>
+            <div class="dinput">
+                <input type="text" id="inputText" placeholder="0">
+                <div class="c">
+                    <input type="button" value="C" class="btna C" onclick="refresh()">
+                </div>
+            </div>
+        </div>
+        <div class="body justify-content-center ">
+            <div class="row justify-content-center">
+                <input type="button" value="7" class="btna" onclick="addtodeValue(7)">
+                <input type="button" value="8" class="btna" onclick="addtodeValue(8)">
+                <input type="button" value="9" class="btna" onclick="addtodeValue(9)">
+                <input type="button" value="+" class="btna" onclick="addtodeValue('+')">
+                <input type="button" value="|X|" class="btna" onclick="mathCalector('abs')">
+            </div>
+            <div class="row justify-content-center">
+                <input type="button" value="4" class="btna" onclick="addtodeValue(4)">
+                <input type="button" value="5" class="btna" onclick="addtodeValue(5)">
+                <input type="button" value="6" class="btna" onclick="addtodeValue(6)">
+                <input type="button" value="-" class="btna" onclick="addtodeValue('-')">
+                <input type="button" value="&radic;" class="btna" onclick="mathCalector('sqrt')">
+            </div>
+            <div class="row justify-content-center">
+                <input type="button" value="1" class="btna" onclick="addtodeValue(1)">
+                <input type="button" value="2" class="btna" onclick="addtodeValue(2)">
+                <input type="button" value="3" class="btna" onclick="addtodeValue(3)">
+                <input type="button" value="*" class="btna" onclick="addtodeValue('*')">
+                <input type="button" value="r" class="btna" onclick="mathCalector('round')">
+            </div>
+            <div class="row justify-content-start " style="margin-left: 0px;">
+                <input type="button" value="0" class="btna" onclick="addtodeValue(0)">
+                <input type="button" value="." class="btna" onclick="addtodeValue('.')">
+                <input type="button" value="/" class="btna" onclick="addtodeValue('/')">
+                <input type="button" value="^" class="btna" onclick="mathCalector('pow')">
+                <input type="button" value="=" class="btna mos" onclick="mosavi()">
+            </div>
+        </div>
+    </section>
+    <script src="Mashin-hesab.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2498db !important;
+}
+.cont{
+    background-color: #eeee;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.2  );
+    height: 400px;
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+    border-radius:6px ;
+    z-index: 100;
+    margin: 10px;
+}
+.cont .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 31%;
+    background-color: #fefefe;
+    display: flex;
+}
+.cont .body{
+    height: 69%;
+    width: 100%;
+    position: absolute;
+    top: 31%;
+    left: 0;
+    padding: 10px 5px;
+}
+.cont .btna{
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.2  );
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #2498db;
+    color: #fff;
+    margin:10px 5px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cont .btna:hover{
+    box-shadow: 0px 1px 15px rgba(0,0,0,0.9);
+    transform: translateY(-3px);
+}
+.cont  .btna:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+#inputText{
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    color: #333;
+    z-index: 1;
+}
+.btna.C{
+    z-index: 3;
+    background-color: hsla(340, 100%, 50%, 0.992);
+    box-shadow: none;
+}
+.dinput{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+.vide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.d-cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2  );
+    z-index: 1;
+}
+.btna.mos{
+    background-color: rgb(12, 173, 33);
+}
+#pish{
+    padding: 5px;
+}
+@media(max-height:410px) {
+    .cont{
+        height: 350px;
+    }
+    .btna{
+        margin:5px 5px !important;    
+    }
+}
