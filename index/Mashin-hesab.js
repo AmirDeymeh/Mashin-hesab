@@ -1,3 +1,4 @@
+'use strict';
 const btna=document.querySelectorAll('.btna');
 const pish=document.getElementById('pish');
 let motrue=false;
@@ -28,3 +29,95 @@ function mathCalector(a){
         inputTextHeader.value=Math[a](val);
     }
 }
+// key code
+document.addEventListener('keyup',function(e){
+    function keycode(){
+        if(e.key==='Enter'){
+            mosavi();
+            inputTextHeader.focus();
+        }
+        if(e.key==='c'){
+            refresh();
+            inputTextHeader.focus();
+        }
+        if(e.key==='/'){
+            inputTextHeader.value+='/';
+            inputTextHeader.focus();
+        }
+        if(e.key==='*'){
+            inputTextHeader.value+='*';
+            inputTextHeader.focus();
+        }
+        if(e.key==='+'){
+            inputTextHeader.value+='+';
+            inputTextHeader.focus();
+        }
+        if(e.key==='-'){
+            inputTextHeader.value+='-';
+            inputTextHeader.focus();
+        }
+        if(e.key==='.'){
+            inputTextHeader.value+='.';
+            inputTextHeader.focus();
+        }
+        if(e.key==='0'){
+            inputTextHeader.value+='0';
+            inputTextHeader.focus();
+        }
+        if(e.key==='1'){
+            inputTextHeader.value+='1';
+            inputTextHeader.focus();
+        }
+        if(e.key==='2'){
+            inputTextHeader.value+='2';
+            inputTextHeader.focus();
+        }
+        if(e.key==='3'){
+            inputTextHeader.value+='3';
+            inputTextHeader.focus();
+        }
+        if(e.key==='4'){
+            inputTextHeader.value+='4';
+            inputTextHeader.focus();
+        }
+        if(e.key==='5'){
+            inputTextHeader.value+='5';
+            inputTextHeader.focus();
+        }
+        if(e.key==='6'){
+            inputTextHeader.value+='6';
+            inputTextHeader.focus();
+        }
+        if(e.key==='7'){
+            inputTextHeader.value+='7';
+            inputTextHeader.focus();
+        }
+        if(e.key==='8'){
+            inputTextHeader.value+='8';
+            inputTextHeader.focus();
+        }
+        if(e.key==='9'){
+            inputTextHeader.value+='9';
+            inputTextHeader.focus();
+        }
+        if(e.key==='^'){
+            motrue=true;
+            inputTextHeader.value +='^';
+            inputTextHeader.focus();
+        }
+
+        if(e.key==='q'){
+            inputTextHeader.value=Math.abs(inputTextHeader.value);
+            inputTextHeader.focus();
+        }
+        if(e.key==='r'){
+            inputTextHeader.value=Math.sqrt(inputTextHeader.value);
+            inputTextHeader.focus();
+        }
+        if(e.key==='Tab'){
+            inputTextHeader.value=Math.round(inputTextHeader.value);
+            inputTextHeader.focus();
+        }
+    }
+    keycode();
+})
